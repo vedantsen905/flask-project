@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+{% block title%} About - {% endblock title%} 
+{% block body %}
+
+
+  <div class="container my-4">
+    <h1 class="text-center">About My To-Do List</h1>
+    <p class="lead">
+      Welcome to my To-Do List application! This web application allows you to manage your tasks easily and efficiently. You can add, view, update, and delete tasks as needed.
+    </p>
+    <h3>Features:</h3>
+    <ul>
+      <li>Add new tasks with a title and description</li>
+      <li>Edit existing tasks</li>
+      <li>Delete completed or unwanted tasks</li>
+      <li>View all tasks in a simple, user-friendly interface</li>
+    </ul>
+    <p>This project was built using <strong>Flask</strong> for the backend, and it uses <strong>SQLite</strong> as the database to store your tasks.</p>
+  </div>
+
+  {%endblock body %}

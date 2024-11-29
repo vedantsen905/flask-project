@@ -1,2 +1,12 @@
+run = "app.py"
+modules = ["python-3.11"]
 [nix]
 channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "app.py"]
+
+[[ports]]
+localPort = 8000
+externalPort = 80
+exposeLocalhost = true
